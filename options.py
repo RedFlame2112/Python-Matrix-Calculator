@@ -166,7 +166,21 @@ def option9():
     matrix.print_matrix("Matrix 1", matrix1)
     sys.stdout.flush()
     time.sleep(0.5)
-    eigenval = list_matrix.eigenvals() 
+    eigenval = list_matrix.eigenvals()
     print("These are the eigenvalues in dictionary form, plus their multiplicity. "
           "The part to the left of the colon is the eigenvalue and to the right is the multiplicity.")
     print(eigenval)
+def option10():
+    """
+    Output the eigenvalues
+    """
+    print(
+        'Outputting eigenvectors and corresponding eigenvalues+multiplicities.This outputs a tuple of <eigenvalue> + <multiplicity> + <eigenvector>.\nKeep in mind that the eigenvector is NOT in reduced form')
+    matrix1 = generateUserMatrix()
+    list_matrix = Matrix(matrix1)
+    matrix.print_matrix("Matrix 1", matrix1)
+    sys.stdout.flush()
+    time.sleep(0.5)
+    eigenvect = list_matrix.eigenvects()
+    print("These are the unreduced eigenvectors with corresponding eigenvalues + multiplicities")
+    print(eigenvect)
