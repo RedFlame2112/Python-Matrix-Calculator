@@ -126,9 +126,11 @@ def option7():
     Subtract 2 matrices
     """
     matrix1 = generateUserMatrix()
+    matrix.print_matrix("Matrix 1", matrix1)
     sys.stdout.flush()
     time.sleep(0.5)
     matrix2 = generateSecondMatrix()
+    matrix.print_matrix("Matrix 2", matrix2)
     difference = matrix.subtract_mat(matrix1, matrix2)
     print('\n')
     print('The difference of the two matrices is: ')
@@ -143,9 +145,11 @@ def option8():
     print('Beware that in matrix multiplication, order matters!'
           ' The first matrix times the second is NOT the second times the first')
     matrix1 = generateUserMatrix()
+    matrix.print_matrix("Matrix 1", matrix1)
     sys.stdout.flush()
     time.sleep(0.5)
     matrix2 = generateSecondMatrix()
+    matrix.print_matrix("Matrix 2", matrix2)
     prod = matrix.multiply_mat(matrix1, matrix2)
     print('\n')
     print('The product of the two matrices is: ')
