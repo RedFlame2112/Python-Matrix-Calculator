@@ -28,7 +28,7 @@ menu_options = {
     6: 'Add 2 matrices',
     7: 'Subtract 2 matrices',
     8: 'Multiply 2 matrices',
-    9: 'Get Eigenvalues and Eigenvectors',
+    9: 'Get Eigenvalues',
     10: 'Exit',
 }
 
