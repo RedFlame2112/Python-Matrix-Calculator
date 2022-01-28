@@ -12,7 +12,7 @@ def generateUserMatrix():
     for i in range(rmain):
         k = []
         for j in range(cmain):
-            k.append(int(input()))
+            k.append(float(input()))
         matmain.append(k)
 
     return matmain
@@ -27,7 +27,7 @@ def generateSecondMatrix():
     for i in range(r2):
         a = []
         for j in range(c2):
-            a.append(int(input()))
+            a.append(float(input()))
         mat2.append(a)
     sys.stdout.flush()
     time.sleep(1)
