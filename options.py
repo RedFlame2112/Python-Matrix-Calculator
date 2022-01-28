@@ -1,7 +1,7 @@
 import matrix
 import time
 import sys
-
+from sympy import *
 
 def generateUserMatrix():
     rmain = int(input("Enter the number of rows you want in your matrix :"))
@@ -12,7 +12,7 @@ def generateUserMatrix():
     for i in range(rmain):
         k = []
         for j in range(cmain):
-            k.append(float(input()))
+            k.append(int(input()))
         matmain.append(k)
 
     return matmain
@@ -27,7 +27,7 @@ def generateSecondMatrix():
     for i in range(r2):
         a = []
         for j in range(c2):
-            a.append(float(input()))
+            a.append(int(input()))
         mat2.append(a)
     sys.stdout.flush()
     time.sleep(1)
@@ -155,3 +155,17 @@ def option8():
     print('The product of the two matrices is: ')
     print('\n')
     return matrix.print_matrix("Matrix Product", prod)
+
+def option9():
+    """
+    Output the eigenvalues and eigenvectors
+    """
+    print('request will be in the form of a tuple (eigenvalue, multiplicity, eigenvector)')
+    matrix1 = generateUserMatrix()
+    list_matrix = Matrix(matrix1)
+    matrix.print_matrix("Matrix 1", matrix1)
+    sys.stdout.flush()
+    time.sleep(0.5)
+    eigenvect = list_matrix.eigenvects()
+    matrix.print_matrix("eigenvectors", eigenvect)
+
