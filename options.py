@@ -158,14 +158,15 @@ def option8():
 
 def option9():
     """
-    Output the eigenvalues and eigenvectors
+    Output the eigenvalues
     """
-    print('request will be in the form of a tuple (eigenvalue, multiplicity, eigenvector)')
+    print('Outputting eigenvalues')
     matrix1 = generateUserMatrix()
     list_matrix = Matrix(matrix1)
     matrix.print_matrix("Matrix 1", matrix1)
     sys.stdout.flush()
     time.sleep(0.5)
-    eigenvect = list_matrix.eigenvects()
-    matrix.print_matrix("eigenvectors", eigenvect)
-
+    eigenval = list(list_matrix.eigenvals().keys())
+    print("These are the eigenvalues in dictionary form:")
+    print('\n')
+    print(eigenval)
