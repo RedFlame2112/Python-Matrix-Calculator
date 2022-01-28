@@ -55,21 +55,9 @@ def transpose_mat(M):
     """
     Takes a matrix M and transposes its columns and rows
     """
-
-    # special case: matrix is a 1D array, transpose to 2D matrix
-
-    if not isinstance(M[0], list):
-        M = [M]
-
-    # proceed with the same algorithm as the copy matrix, except for the last step"""
-
-    row = len(M)
-    col = len(M[0])
-    T = zeros_mat(row, col)
-    for i in range(0, row):
-        for j in range(0, col):
-            T[j][i] = M[i][j]  # elements are preserved
-    return T
+    res = [[M[j][i] for j in range(len(M))] for i in range (len(M[0]))]
+    print('\n')
+    return res
 
 
 def add_mat(A, B):
