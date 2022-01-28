@@ -166,7 +166,7 @@ def option9():
     matrix.print_matrix("Matrix 1", matrix1)
     sys.stdout.flush()
     time.sleep(0.5)
-    eigenval = list(list_matrix.eigenvals().keys())
-    print("These are the eigenvalues in dictionary form:")
-    print('\n')
+    eigenval = list_matrix.eigenvals() 
+    print("These are the eigenvalues in dictionary form, plus their multiplicity. "
+          "The part to the left of the colon is the eigenvalue and to the right is the multiplicity.")
     print(eigenval)
