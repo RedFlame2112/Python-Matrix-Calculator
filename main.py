@@ -28,8 +28,9 @@ menu_options = {
     6: 'Add 2 matrices',
     7: 'Subtract 2 matrices',
     8: 'Multiply 2 matrices',
-    9: 'Get Eigenvalues',
-    10: 'Exit',
+    9: 'Get Just Eigenvalues',
+    10: 'Get Eigenvalues and Eigenvectors',
+    11: 'Exit'
 }
 
 
@@ -65,6 +66,8 @@ while True:
     elif option == 9:
         options.option9()
     elif option == 10:
+        options.option10()
+    elif option == 11:
         print('Thank you for using this matrix calculator. Have a good one!')
         exit()
     else:
