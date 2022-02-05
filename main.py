@@ -71,4 +71,4 @@ while True:
         print('Thank you for using this matrix calculator. Have a good one!')
         exit()
     else:
-        print('Invalid option. Please enter an integer between 1 and 9 inclusive')
+        print('Invalid option. Please enter an integer between 1 and 11 inclusive')
